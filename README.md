@@ -83,12 +83,10 @@ $ npm run start:prod
 
 | No | Method | Endpoint | Parameters | Description |
 | --- | --- | --- | --- | --- |
-| 1 | POST | /users | 
-{
+| 1 | POST | /users | {
   "email": "stringsss",
   "name": "string"
-}
- | Create new user data |
+} | Create new user data |
 | 2 | PATCH | /users/{id:} | 
 
 {
