@@ -32,6 +32,39 @@
 $ npm install
 ```
 
+```bash
+nest update -f -t latest
+```
+
+## Preparations Swagger (Only when npm install failed to add swagger)
+```bash
+npm install --save @nestjs/swagger swagger-ui-express
+```
+
+
+## Preparations Prisma
+
+1. Install `prisma`:
+
+    ```bash
+     npx prisma init
+    ```
+
+2. Create database using postgres or mysql (assume ane of that already installed to you machine):
+
+3. Migrate the database structure using command below:
+
+    ```bash
+    npx prisma migrate dev --name "init"
+    ```
+
+4. Fill the database records using seeder:
+
+    ```bash
+    npx prisma db seed
+    ```
+
+
 ## Running the app
 
 ```bash
@@ -43,9 +76,95 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
 ```
 
-## Test
+## Resource/Endpoint
+
+| No | Method | Endpoint | Parameters | Description |
+| --- | --- | --- | --- | --- |
+| 1 | POST | /users | 
+```{
+  "email": "stringsss",
+  "name": "string"
+}```
+ | Create new user data |
+| 2 | PATCH | /users/{id:} | 
+```
+{
+  "email": "stringsss",
+  "name": "string"
+}
+```
+ | Update partial fields |
+| 3 | GET | /users/ | --- | List all user |
+| 4 | GET | /users/{id:} | --- | List user by id |
+| 5 | DELETE | /users/{id:} | --- | Delete user by id |
+| 6 | POST | /products | 
+```
+{
+  "name": "string",
+  "price": 10,
+  "quantity": 90
+}
+```
+ | Create new products data |
+| 7 | PATCH | /products/{id:} | 
+```
+{
+  "name": "string",
+  "price": 10,
+  "quantity": 90
+}
+```
+ | Update partial fields |
+| 8 | GET | /products/ | --- | List all products |
+| 9 | GET | /products/{id:} | --- | List products by id |
+| 10 | DELETE | /products/{id:} | --- | Delete products by id |
+| 11 | POST | /payments | 
+```
+{
+  "name": "string"
+}
+```
+ | Create new payment data |
+| 12 | PATCH | /users/{id:} | 
+```
+{
+  "name": "string"
+}
+```
+ | Update partial fields |
+| 13 | GET | /payments/ | --- | List all payment |
+| 14 | GET | /payments/{id:} | --- | List payment by id |
+| 15 | DELETE | /payments/{id:} | --- | Delete payment by id |
+| 16 | POST | /transactions | 
+```
+{
+  "userId": 4,
+  "productId": 4,
+  "quantity": 1,
+  "paymentId": 4,
+  "total": 0,
+  "status": 0
+}
+```
+ | Create new transaction data |
+| 17 | PATCH | /users/{id:} | 
+```
+{
+  "userId": 4,
+  "productId": 4,
+  "quantity": 16,
+}
+  ```
+ | Update partial fields |
+| 18 | GET | /transactions/ | --- | List all transaction |
+| 19 | GET | /transactions/{id:} | --- | List transaction by id |
+| 20 | DELETE | /transactions/{id:} | --- | Delete transaction by id |
+
+
+<!-- ## Test
 
 ```bash
 # unit tests
@@ -56,25 +175,10 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+``` -->
 
 
-
-npm i -D prisma
+<!-- npm i -D prisma
 
 You can initialize Prisma inside your project by running:
 
@@ -97,4 +201,4 @@ The @ApiProperty decorators are required to make the class properties visible to
 
 
 npm install class-validator class-transformer
-
+ -->
