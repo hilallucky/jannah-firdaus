@@ -83,80 +83,23 @@ $ npm run start:prod
 
 | No | Method | Endpoint | Parameters | Description |
 | --- | --- | --- | --- | --- |
-| 1 | POST | /users | {
-  "email": "stringsss",
-  "name": "string"
-} | Create new user data |
-| 2 | PATCH | /users/{id:} | 
-
-{
-  "email": "stringsss",
-  "name": "string"
-}
-
- | Update partial fields |
+| 1 | POST | /users | {  "email": "stringsss",  "name": "string"} | Create new user data |
+| 2 | PATCH | /users/{id:} | {  "email": "stringsss",  "name": "string"} | Update partial fields |
 | 3 | GET | /users/ | --- | List all user |
 | 4 | GET | /users/{id:} | --- | List user by id |
 | 5 | DELETE | /users/{id:} | --- | Delete user by id |
-| 6 | POST | /products | 
-
-{
-  "name": "string",
-  "price": 10,
-  "quantity": 90
-}
-
- | Create new products data |
-| 7 | PATCH | /products/{id:} | 
-
-{
-  "name": "string",
-  "price": 10,
-  "quantity": 90
-}
-
- | Update partial fields |
+| 6 | POST | /products | {  "name": "string",  "price": 10,  "quantity": 90} | Create new products data |
+| 7 | PATCH | /products/{id:} | {  "name": "string",  "price": 10,  "quantity": 90} | Update partial fields |
 | 8 | GET | /products/ | --- | List all products |
 | 9 | GET | /products/{id:} | --- | List products by id |
 | 10 | DELETE | /products/{id:} | --- | Delete products by id |
-| 11 | POST | /payments | 
-
-{
-  "name": "string"
-}
-
- | Create new payment data |
-| 12 | PATCH | /users/{id:} | 
-
-{
-  "name": "string"
-}
-
- | Update partial fields |
+| 11 | POST | /payments | {  "name": "string" } | Create new payment data |
+| 12 | PATCH | /users/{id:} | {  "name": "string"  } | Update partial fields |
 | 13 | GET | /payments/ | --- | List all payment |
 | 14 | GET | /payments/{id:} | --- | List payment by id |
 | 15 | DELETE | /payments/{id:} | --- | Delete payment by id |
-| 16 | POST | /transactions | 
-
-{
-  "userId": 4,
-  "productId": 4,
-  "quantity": 1,
-  "paymentId": 4,
-  "total": 0,
-  "status": 0
-}
-
- | Create new transaction data |
-| 17 | PATCH | /users/{id:} | 
-
-{
-  "userId": 4,
-  "productId": 4,
-  "quantity": 16,
-}
-  
- | Update partial fields |
+| 16 | POST | /transactions | {  "userId": 4,  "productId": 4,  "quantity": 1,  "paymentId": 4,  "total": 0,  "status": 0 } | Create new transaction data |
+| 17 | PATCH | /users/{id:} | {  "userId": 4,  "productId": 4,  "quantity": 16, } | Update partial fields |
 | 18 | GET | /transactions/ | --- | List all transaction |
 | 19 | GET | /transactions/{id:} | --- | List transaction by id |
 | 20 | DELETE | /transactions/{id:} | --- | Delete transaction by id |
