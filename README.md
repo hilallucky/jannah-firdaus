@@ -79,16 +79,24 @@ $ npm run start:prod
 
 ```
 
-## Resource/Endpoint
+## Resource/Endpoint Test 2
+
+No 1
 
 | No | Method | Endpoint | Parameters | Description |
 | --- | --- | --- | --- | --- |
-| 1 | POST | /users | {  "email": "stringsss",  "name": "string"} | Create new user data |
-| 2 | PATCH | /users/{id:} | {  "email": "stringsss",  "name": "string"} | Update partial fields |
+| 1 | POST | /print-array | {  "start": 1, "end": 100 } | Array replace value] |
+
+No 2
+
+| No | Method | Endpoint | Parameters | Description |
+| --- | --- | --- | --- | --- |
+| 1 | POST | /users | {  "email": "stringsss",  "name": "string" } | Create new user data |
+| 2 | PATCH | /users/{id:} | {  "email": "stringsss",  "name": "string" } | Update partial fields |
 | 3 | GET | /users/ | --- | List all user |
 | 4 | GET | /users/{id:} | --- | List user by id |
 | 5 | DELETE | /users/{id:} | --- | Delete user by id |
-| 6 | POST | /products | {  "name": "string",  "price": 10,  "quantity": 90} | Create new products data |
+| 6 | POST | /products | {  "name": "string",  "price": 10,  "quantity": 90 } | Create new products data |
 | 7 | PATCH | /products/{id:} | {  "name": "string",  "price": 10,  "quantity": 90} | Update partial fields |
 | 8 | GET | /products/ | --- | List all products |
 | 9 | GET | /products/{id:} | --- | List products by id |
