@@ -123,6 +123,14 @@ No 2
 
 <div style="width:60px ; height:60px">
 ![Flowchart](./assets/JannahFirdaus.pdf?raw=true "Flowchart")
+  <img
+src="assets/JannahFirdaus.pdf"
+raw=true
+alt="Jannh Firdaus Flowchart"
+style=“margin-right: 10px;”
+/>
+
+
 <div>
 
 
