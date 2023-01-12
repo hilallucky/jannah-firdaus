@@ -119,6 +119,13 @@ No 2
 | 19 | GET | /transactions/{id:} | --- | List transaction by id |
 | 20 | DELETE | /transactions/{id:} | --- | Delete transaction by id |
 
+## Transaction FLOWCHART 
+
+<div style="width:60px ; height:60px">
+![Flowchart](./assets/JannahFirdaus.pdf?raw=true "Flowchart")
+<div>
+
+
 
 <!-- ## Test
 
