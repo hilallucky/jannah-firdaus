@@ -119,22 +119,6 @@ No 2
 | 19 | GET | /transactions/{id:} | --- | List transaction by id |
 | 20 | DELETE | /transactions/{id:} | --- | Delete transaction by id |
 
-## Transaction FLOWCHART 
-
-<div style="width:60px ; height:60px">
-![Flowchart](./assets/JannahFirdaus.pdf?raw=true "Flowchart")
-  <img
-src="./src/assets/JannahFirdaus.pdf"
-raw=true
-alt="Jannh Firdaus Flowchart"
-style=“margin-right: 10px;”
-/>
-  
-  [embed[][http://example.com/file.pdf](https://github.com/hilallucky/jannah-firdaus/blob/master/src/assets/JannahFirdaus.pdf)](https://github.com/hilallucky/jannah-firdaus/blob/master/src/assets/JannahFirdaus.pdf)[/embed] 
-
-
-<div>
-
 
 
 <!-- ## Test
