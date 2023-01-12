@@ -120,6 +120,11 @@ No 2
 | 20 | DELETE | /transactions/{id:} | --- | Delete transaction by id |
 
 
+## Swagger
+
+```
+http://localhost:3000/api
+```
 
 <!-- ## Test
 
