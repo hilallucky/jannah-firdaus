@@ -130,7 +130,7 @@ alt="Jannh Firdaus Flowchart"
 style=“margin-right: 10px;”
 />
   
-  [embed[]http://example.com/file.pdf](https://github.com/hilallucky/jannah-firdaus/blob/master/src/assets/JannahFirdaus.pdf)[/embed] 
+  [embed[][http://example.com/file.pdf](https://github.com/hilallucky/jannah-firdaus/blob/master/src/assets/JannahFirdaus.pdf)](https://github.com/hilallucky/jannah-firdaus/blob/master/src/assets/JannahFirdaus.pdf)[/embed] 
 
 
 <div>
