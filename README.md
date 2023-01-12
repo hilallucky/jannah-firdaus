@@ -52,13 +52,20 @@ npm install --save @nestjs/swagger swagger-ui-express
 
 2. Create database using postgres or mysql (assume ane of that already installed to you machine):
 
-3. Migrate the database structure using command below:
+    ```
+    # sample databasename
+     transaction
+    ```
+
+3. Update .env file based on no 2.
+
+4. Migrate the database structure using command below:
 
     ```bash
     npx prisma migrate dev --name "init"
     ```
 
-4. Fill the database records using seeder:
+5. Fill the database records using seeder:
 
     ```bash
     npx prisma db seed
